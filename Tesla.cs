@@ -1,13 +1,12 @@
 namespace Garage;
 
-public class Tesla  // Electric car
+public class Tesla : Vehicle 
 {
     public double BatteryKWh { get; set; }
-    public string MainColor { get; set; }
-    public int MaximumOccupancy { get; set; }
-
+   
     public void ChargeBattery()
     {
-        // method definition omitted
+        Console.WriteLine(@$"This {Model}'s color is {MainColor}, and can hold {MaximumOccupancy} passengers.
+        It has an amazing battery capacity of {BatteryKWh}");
     }
 }

@@ -1,12 +1,17 @@
+
 namespace Garage;
 
-    public class Cessna
+public class Cessna : Vehicle
 {
     public double FuelCapacity { get; set; }
-    public string MainColor { get; set; }
-    public int MaximumOccupancy { get; set; }
+    
     public void RefuelTank()
     {
-        // method definition omitted
+        Console.WriteLine($"This {Model}'s color is {MainColor}, fuel capacity is {FuelCapacity} and can hold {MaximumOccupancy} passengers.");
+    }
+
+    public override void Drive()
+    {
+        Console.WriteLine("Zoooooom!");
     }
 }

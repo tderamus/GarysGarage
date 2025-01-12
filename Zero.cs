@@ -1,12 +1,11 @@
 namespace Garage;
 
-public class Zero
+public class Zero : Vehicle
 {
     public double BatteryKWh { get; set; }
-    public string MainColor { get; set; }
-    public int MaximumOccupancy { get; set; }
+    
     public void ChargeBattery()
     {
-        // method definition omitted
+        Console.WriteLine($"This Ram's color is {MainColor}, and can hold {MaximumOccupancy} passengers.");
     }
 }
