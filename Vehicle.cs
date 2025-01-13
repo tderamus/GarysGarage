@@ -9,5 +9,12 @@ public class Vehicle
     {
         Console.WriteLine("VROOOOOOMMMMM!");
     }
-
+    public virtual void Turn(string direction)
+    {
+        Console.WriteLine($"The vehicle {Model} carefully turns {direction}");
+    }
+    public virtual void Stop()
+    {
+        Console.WriteLine($"The vehicle {Model} gently rolls to a stop.");
+    }
 }
