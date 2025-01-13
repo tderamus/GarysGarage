@@ -13,4 +13,8 @@ public class Vehicle
     {
         Console.WriteLine($"The vehicle {Model} carefully turns {direction}");
     }
+    public virtual void Stop()
+    {
+        Console.WriteLine($"The vehicle {Model} gently rolls to a stop.");
+    }
 }

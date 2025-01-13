@@ -6,8 +6,13 @@ Tesla modelX = new Tesla { Model = "Model X", MainColor = "blue", MaximumOccupan
 Cessna mx410 = new Cessna { Model = "Windwurl", MaximumOccupancy = 12, MainColor = "Yellow", FuelCapacity = 899.5};
 Ram ram = new Ram {Model = "Dodge", FuelCapacity = 32.9, MaximumOccupancy = 5, MainColor = "Red"};
 
-fxs.Turn("left");
-modelS.Turn("right");
-modelX.Turn("left");
-mx410.Turn("right");
-ram.Turn("right");
+fxs.ChargeBattery();
+Console.WriteLine();
+modelS.ChargeBattery();
+Console.WriteLine();
+modelX.ChargeBattery();
+Console.WriteLine();
+mx410.RefuelTank();
+Console.WriteLine();
+ram.RefuelTank();
+
