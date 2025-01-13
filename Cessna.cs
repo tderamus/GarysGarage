@@ -14,4 +14,9 @@ public class Cessna : Vehicle
     {
         Console.WriteLine("Zoooooom!");
     }
+
+    public override void Turn(string direction)
+    {
+        Console.WriteLine($"The {Model} plane carefully turns {direction}");
+    }
 }

@@ -8,4 +8,14 @@ public class Ram : Vehicle
     {
         Console.WriteLine($"This {Model}'s color is {MainColor}, and can hold {MaximumOccupancy} passengers.");
     }
+
+    public override void Drive()
+    {
+        Console.WriteLine("ZoomZoomZoooommmmm!");
+    }
+
+    public override void Turn(string direction)
+    {
+        Console.WriteLine($"The {Model} pickup truck carefully turns {direction}");
+    }
 }

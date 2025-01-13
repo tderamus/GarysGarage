@@ -6,6 +6,11 @@ public class Zero : Vehicle
     
     public void ChargeBattery()
     {
-        Console.WriteLine($"This Ram's color is {MainColor}, and can hold {MaximumOccupancy} passengers.");
+        Console.WriteLine($"This {Model}'s color is {MainColor}, and can hold {MaximumOccupancy} passengers.");
+    }
+
+    public override void Drive()
+    {
+        Console.WriteLine("WhoootHooooo!");
     }
 }
